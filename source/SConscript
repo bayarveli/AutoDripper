@@ -1,0 +1,7 @@
+Import('env')
+
+Executable_Name = 'AutoDripper'
+
+Source_Files = ['main.c']
+
+program = env.createExecutable(executableName=Executable_Name, outputDirectory = '../build', sourceFiles = Source_Files)
